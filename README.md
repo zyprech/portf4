@@ -1,31 +1,54 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+Battleship Bandits
 
-Welcome USER_NAME,
+Battleship Bandits is a web game created using the template provided by Code Institute and deployed through Heroku. This is a game for users to test themselves against an automated computer. The aim of the game is to sink all the computer's battleships before it sinks yours.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+Link to the live game: https://portfolio4-battleships-2a70410d4d1b.herokuapp.com/
 
-## Reminders
+![image](https://github.com/zyprech/portf4/assets/161986102/0092b144-d3b7-49a1-b04e-9e2b099d732b)
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+How to play
 
-## Creating the Heroku app
+Each player has a 5x5 grid where their battleships are randomly spawned. The goal is to guess correct coordinates inorder to sink the opponents ships.
+The user and computer take turns guessing coordinates (column and row) within the range of 1 to 5.
+X indicates a location that has not been guessed yet, * indicated a missed location and # represents a location where a battleship has been sunk.
+The winner is declared once all of someones ships have been sunk or after 10 turns whoever has sunk the most ships wins.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
 
-1. `heroku/python`
-2. `heroku/nodejs`
+Features
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+Randomized ship placements - Ships are randomly places everytime at the start of the game.
+Feedback - The game will give you feedback based on the guesses you make.
+Data - The game will keep track of data to determine the winner.
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+![image](https://github.com/zyprech/portf4/assets/161986102/598d7721-9265-4229-9744-9d1b1d8e760c)
+![image](https://github.com/zyprech/portf4/assets/161986102/13f860fc-27c1-4f34-886d-364fa2862346)
 
-Connect your GitHub repository and deploy as normal.
+Error handling: Game makes sure that users type in the correct coordinate range and that they input only numbers.
+![image](https://github.com/zyprech/portf4/assets/161986102/17aebfc3-3e6d-47ed-86a8-17eed730a688)
 
-## Constraints
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+Testing
 
------
-Happy coding!
+Tested using https://pep8ci.herokuapp.com/: No errors
+
+
+Deployment
+
+This project was deployed using Code Institute's mock terminal for Heroku.
+
+The steps for deployment are as follows:
+
+Fork or clone this repository
+Create a new Heroku app
+Set the buildpacks to Python and NodeJS in that order
+Link the Heroku app to the repository
+Click on Deploy
+
+
+Credits
+
+Code institute for the deployment terminal
+Game inspiration: Code institute portfolio example.
+
+
+
