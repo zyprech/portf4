@@ -1,4 +1,4 @@
-Battleship Bandits
+# Battleship Bandits
 
 Battleship Bandits is a web game created using the template provided by Code Institute and deployed through Heroku. This is a game for users to test themselves against an automated computer. The aim of the game is to sink all the computer's battleships before it sinks yours.
 
